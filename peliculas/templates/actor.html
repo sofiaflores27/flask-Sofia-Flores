@@ -1,0 +1,8 @@
+{%extends 'base.html' %} {% block encabezado %}actor{% endblock %} {% block
+cuerpo %}
+<ul>
+  {% for actor in actores %}
+  <li>{{actor['first_name']}} {{actor['last_name']}}</li>
+  {% endfor %}
+</ul>
+{% endblock %}
